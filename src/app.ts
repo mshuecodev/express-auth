@@ -1,11 +1,16 @@
-import express from "express";
-import indexRoute from "./routes/index.route";
-import errorHandler from "./middlewares/errorHandler";
+import express from "express"
+import cors from "cors"
+import helmet from "helmet"
+import indexRoute from "./routes/index.route"
+import errorHandler from "./middlewares/errorHandler"
 
-const app = express();
+const app = express()
 
-app.use(express.json());
-app.use("/api", indexRoute);
-app.use(errorHandler);
+app.use(helmet()) // Security headers
+app.use(cors()) // Enable CORS
 
-export default app;
+app.use(express.json())
+app.use("/api", indexRoute)
+app.use(errorHandler)
+
+export default app
