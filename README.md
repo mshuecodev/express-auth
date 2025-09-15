@@ -2,14 +2,14 @@
 
 ## 1. User Management
 
--   User registration: create new users with hashed passwords. [x]
--   Unique identity: email/username must be unique. [x]
+-   [x] User registration: create new users with hashed passwords.
+-   Unique identity: email/username must be unique.
 -   Profile management: allow updating fullname, avatar, etc.
 -   Soft delete / Deactivation: don't hard delete accounts unless required.
 
 ## 2. Password Security
 
--   Use bcrypt/argon2 for hashing (never store plaintext). [x]
+-   [x] Use bcrypt/argon2 for hashing (never store plaintext).
 -   Enforce password strenth rules.
 -   Store password reset tokens (short-lived + single-use).
 -   Support password change flow with re-authentication.
@@ -29,7 +29,7 @@
 
 ## 5. Email & Verification
 
--   Email verification flow with secure token links. [x]
+-   [x] Email verification flow with secure token links.
 -   Block login until verified (depending on app).
 -   Resend verification email with rate limiting.
 
