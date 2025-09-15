@@ -1,12 +1,12 @@
 {
-	"name": "express-ts-starter",
+	"name": "express-auth",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "server.ts",
 	"scripts": {
 		"dev": "ts-node-dev --respawn --transpile-only src/server.ts",
 		"build": "tsc",
-		"start": "node dist/server.js"
+		"start": "node dist/server.ts"
 	},
 	"keywords": [],
 	"author": "",
